@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --primary-color: #222831;
+    --secondary-color: #EEEEEE;
+    --tertiary-color: #D65A31;
+    --hover-color: #393E46;
+
+    --primary-font: 'Krona One', sans-serif;
+    --secondary-font: 'Montserrat', sans-serif;
+
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.title-bold {
+    color: var(--tertiary-color);
+}
+
+.present {
+    display: flex;
+    align-items: center;
+    gap: 82px;
+    margin: 5% 15%;
+}
+
+.present__content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px
+}
+
+.present__content__title {
+    font-size: 2.25rem;
+    font-family: var(--primary-font);
+}
+
+.present__content__text {
+    font-size: 1.5rem;
+    font-family: var(--secondary-font);
+}
+
+.present__links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+}
+
+.present__links h2 {
+    font-family: var(--primary-font);
+    font-weight: 400;
+}
+
+.present__links__link {
+    width: 50%;
+    text-align: center;
+    padding: 21.5px 0;
+    border: 2px solid var(--tertiary-color);
+    border-radius: 8px;
+    color: var(--secondary-color);
+    font-family: var(--secondary-font);
+    font-weight: 600;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+}
+
+.present__links__link:hover {
+    background-color: var(--hover-color);
+}
+
+.present__links__link__icon {
+    fill: var(--tertiary-color);
+    width: 8%;
+    height: 8%;
+}
+
+.present__profile_picture {
+    padding: 5px;
+    border-radius: 15px;
+    border-color: var(--tertiary-color);
+    width: 40%;
+}
+
+.footer {
+    color: var(--secundary-color);
+    background-color: var(--tertiary-color);
+    text-align: center;
+    font-family: var(--secondary-font);
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 23px;
+}
+
+.header {
+    padding: 2% 0% 0% 15%;
+}
+
+.header__navbar {
+    display: flex;
+    gap: 80px;
+}
+
+.header__navbar__link {
+    color: var(--tertiary-color);
+    font-family: var(--secondary-font);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+    .header {
+        padding: 10%;
+    }
+
+    .header__navbar {
+        justify-content: center;
+    }
+
+    .present {
+        flex-direction: column-reverse;
+        margin: 0% 10%;
+    }
+
+    .present__content {
+        padding: 0% 5%;
+        width: 100%;
+    }
+}
